@@ -14,6 +14,11 @@ public class NewsDetailActivity extends MvpAppCompatActivity implements INewsDet
 
     @InjectPresenter
     NewsDetailPresenter presenter;
+
+    private static final String TITLE = "title";
+    private static final String IMAGE_URL = "imageUrl";
+    private static final String SOURCE_NAME = "source:name";
+    private static final String DESCRIPTION = "description";
     private TextView titleView;
     private TextView descriptionView;
     private TextView sourceNameView;
@@ -44,10 +49,10 @@ public class NewsDetailActivity extends MvpAppCompatActivity implements INewsDet
 
     public void getMessage(){
         Intent intent = getIntent();
-        String title = intent.getExtras().getString("title");
-        String source = intent.getExtras().getString("source:name");
-        String description = intent.getExtras().getString("description");
-        String imageUrl = intent.getExtras().getString("imageUrl");
+        String title = intent.getExtras().getString(TITLE);
+        String source = intent.getExtras().getString(SOURCE_NAME);
+        String description = intent.getExtras().getString(DESCRIPTION);
+        String imageUrl = intent.getExtras().getString(IMAGE_URL);
         presenter.sendMessage(title, source, description, imageUrl);
     }
 }

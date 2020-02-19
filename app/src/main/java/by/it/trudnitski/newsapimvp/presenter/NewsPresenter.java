@@ -1,9 +1,12 @@
 package by.it.trudnitski.newsapimvp.presenter;
 
 import android.annotation.SuppressLint;
+
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
+
 import java.util.List;
+
 import by.it.trudnitski.newsapimvp.model.Article;
 import by.it.trudnitski.newsapimvp.model.News;
 import by.it.trudnitski.newsapimvp.model.api.ApiClient;
@@ -16,7 +19,7 @@ import io.reactivex.schedulers.Schedulers;
 
 @InjectViewState
 public class NewsPresenter extends MvpPresenter<INewsView> implements INewsPresenter {
-    private static final String APY_KEY = "cdb1f31d30b140e0a5aecfd9ec58ec47";
+    private static final String APY_KEY = "";
     private static final String PUBLISHED_AT = "publishedAt";
     private String message;
     private List<Article> articles;

@@ -57,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:contentDescription="@string/image_with_picasso"
+        android:transitionName="@string/transition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

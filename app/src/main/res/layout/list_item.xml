@@ -19,6 +19,7 @@
             android:id="@+id/image_item"
             android:layout_width="@dimen/layout_height_recycler_view"
             android:layout_height="@dimen/layout_height_recycler_view"
+            android:transitionName="@string/transition"
             />
 
         <LinearLayout

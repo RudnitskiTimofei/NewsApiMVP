@@ -7,6 +7,7 @@
     <string name="description_detail">Description detail</string>
     <string name="image_with_picasso">Image with picasso</string>
     <string name="title_detail">Title detail</string>
+    <string name="transition">transition</string>
     <string-array name="spinner">
         <item>Software</item>
         <item>Samsung</item>

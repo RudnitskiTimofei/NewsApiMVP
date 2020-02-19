@@ -7,11 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import by.it.trudnitski.newsapimvp.R;
 import by.it.trudnitski.newsapimvp.model.Article;
 
@@ -48,7 +52,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         if (!TextUtils.isEmpty(model.getPublishedAt())) {
             holder.publishedAt.setText(model.getPublishedAt());
         }
-        if (model.getUrlToImage()!= null) {
+        if (model.getUrlToImage() != null) {
             Picasso.get().load(model.getUrlToImage()).into(holder.imageView);
         } else {
             Picasso.get().load(android.R.mipmap.sym_def_app_icon).into(holder.imageView);
